@@ -322,6 +322,7 @@ packages:
 
   /@vanyauhalin/eslint-config-base/0.3.0_eslint@8.14.0:
     resolution: {integrity: sha512-y8LEk4+p/Y1qoB2bxG7FqmmSOlnG7gZ9KR0K9CcBc96Xfqu9vX/N9kc528PM9kHT5o373DEchPZ+FFFkWjNfDg==, tarball: download/@vanyauhalin/eslint-config-base/0.3.0/f4aab2f0a1e0820266710152798f0856b05039dc295b1e1e8d487b333330b4b4}
+    engines: {node: '>=12', pnpm: '>=4'}
     peerDependencies:
       eslint: ^7.32.0
     dependencies:
