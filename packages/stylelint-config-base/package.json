@@ -1,0 +1,18 @@
+{
+  "name": "@vanyauhalin/stylelint-config-base",
+  "version": "0.0.0",
+  "description": "Stylelint config for vanilla css by @vanyauhalin",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "repository": "github:vanyauhalin/stylelint-config-base",
+  "license": "MIT",
+  "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
+  "type": "module",
+  "main": "lib/index.cjs",
+  "engines": {
+    "node": ">=12",
+    "pnpm": ">=4"
+  }
+}
