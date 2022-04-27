@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build-base": "node .esbuildrc.js base",
-    "lint-base": "eslint packages/eslint-config-base",
+    "lint-base": "eslint packages/stylelint-config-base",
     "test-base": "node --experimental-specifier-resolution=node test/validate.js base"
   },
   "devDependencies": {
