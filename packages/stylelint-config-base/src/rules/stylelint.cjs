@@ -510,7 +510,7 @@ const rules = {
    * blocks.
    * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/block-closing-brace-space-after
    */
-  'block-closing-brace-space-after': 'always-multi-line',
+  'block-closing-brace-space-after': 'never-single-line',
   /**
    * Require a single space or disallow whitespace before the closing brace of
    * blocks.
