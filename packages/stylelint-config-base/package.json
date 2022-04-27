@@ -6,7 +6,7 @@
     "stylelint",
     "stylelint-config"
   ],
-  "repository": "github:vanyauhalin/stylelint-config-base",
+  "repository": "github:vanyauhalin/stylelint-config",
   "license": "MIT",
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "type": "module",
