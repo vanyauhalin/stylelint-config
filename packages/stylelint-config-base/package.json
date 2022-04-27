@@ -4,7 +4,7 @@
   "description": "Stylelint config for vanilla css by @vanyauhalin",
   "keywords": [
     "stylelint",
-    "stylelint-config",
+    "stylelint-config"
   ],
   "repository": "github:vanyauhalin/stylelint-config-base",
   "license": "MIT",
