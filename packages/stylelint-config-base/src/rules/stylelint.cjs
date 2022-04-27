@@ -212,7 +212,7 @@ const rules = {
    * Limit the number of decimal places allowed in numbers.
    * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/number-max-precision
    */
-  'number-max-precision': 3,
+  'number-max-precision': 4,
   /**
    * Disallow redundant values in shorthand properties.
    * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/shorthand-property-no-redundant-values
