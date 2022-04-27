@@ -527,7 +527,7 @@ const rules = {
    * blocks.
    * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/block-opening-brace-newline-before
    */
-  'block-opening-brace-newline-before': 'always',
+  'block-opening-brace-newline-before': 'never-single-line',
   /**
    * Require a single space or disallow whitespace after the closing brace of
    * blocks.
