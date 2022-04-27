@@ -2,3 +2,9 @@ commit-msg:
   commands:
     commitlint:
       run: commitlint --edit
+
+pre-commit:
+  commands:
+    lint:
+      glob: "*.{cjs,js}"
+      run: pnpm eslint
