@@ -721,11 +721,6 @@ const rules = {
    */
   'max-empty-lines': 1,
   /**
-   * Limit the length of a line.
-   * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/max-line-length
-   */
-  'max-line-length': 80,
-  /**
    * Disallow end-of-line whitespace.
    * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/no-eol-whitespace
    */
