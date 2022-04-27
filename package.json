@@ -17,7 +17,9 @@
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
     "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1"
+    "@commitlint/config-conventional": "^16.2.1",
+    "@vanyauhalin/eslint-config-base": "^0.2.0",
+    "eslint": "^8.14.0"
   },
   "engines": {
     "node": ">=12",
