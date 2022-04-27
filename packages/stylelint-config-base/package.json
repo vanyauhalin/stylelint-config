@@ -1,6 +1,6 @@
 {
   "name": "@vanyauhalin/stylelint-config-base",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Stylelint config for vanilla css by @vanyauhalin",
   "keywords": [
     "stylelint",
