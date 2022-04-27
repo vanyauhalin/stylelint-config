@@ -11,6 +11,15 @@
   "author": "Ivan Uhalin <vanyauhalin@gmail.com>",
   "type": "module",
   "main": "lib/index.cjs",
+  "dependencies": {
+    "stylelint-order": "^5.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "14.8.0"
+  },
+  "peerDependencies": {
+    "stylelint": "14.0.0"
+  },
   "engines": {
     "node": ">=12",
     "pnpm": ">=4"
