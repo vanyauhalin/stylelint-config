@@ -1,8 +1,6 @@
-import assert from 'assert';
-// Disabled until the `@types/node` is upgraded to version 18.
-// eslint-disable-next-line import/no-unresolved
-import test from 'node:test';
 import stylelint from 'stylelint';
+import { test } from 'uvu';
+import { equal } from 'uvu/assert';
 import { getOptions } from '../.esbuildrc';
 
 const { outfile } = getOptions();
@@ -15,5 +13,5 @@ test('stylelint should throw an error', async () => {
     files: './test/*.css',
   });
   const hasError = !!results.find((el) => el.errored);
-  assert.strictEqual(hasError, true);
+  equal(hasError, true);
 });
