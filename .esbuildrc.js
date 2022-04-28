@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { resolve } from 'path';
 import { build } from 'esbuild';
 
 function read() {
@@ -6,8 +7,8 @@ function read() {
   const packages = fs.readdirSync(PACKAGES_DIRECTORY);
   return packages.map((pack) => {
     const root = `${PACKAGES_DIRECTORY}/${pack}`;
-    const main = `${root}/lib/index.cjs`;
-    const src = `${root}/src`;
+    const main = resolve(`${root}/lib/index.cjs`);
+    const src = resolve(`${root}/src`);
     return {
       main,
       src,
