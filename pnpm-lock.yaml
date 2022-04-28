@@ -7,7 +7,7 @@ importers:
       '@arkweid/lefthook': ^0.7.7
       '@commitlint/cli': ^16.2.3
       '@commitlint/config-conventional': ^16.2.1
-      '@vanyauhalin/eslint-config-base': ^0.3.0
+      '@vanyauhalin/eslint-config-base': ^0.3.2
       esbuild: ^0.14.38
       eslint: ^8.14.0
       stylelint: ^14.8.0
@@ -16,7 +16,7 @@ importers:
       '@arkweid/lefthook': 0.7.7
       '@commitlint/cli': 16.2.3
       '@commitlint/config-conventional': 16.2.1
-      '@vanyauhalin/eslint-config-base': 0.3.0_eslint@8.14.0
+      '@vanyauhalin/eslint-config-base': 0.3.2_eslint@8.14.0
       esbuild: 0.14.38
       eslint: 8.14.0
       stylelint: 14.8.0
@@ -322,11 +322,10 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
-  /@vanyauhalin/eslint-config-base/0.3.0_eslint@8.14.0:
-    resolution: {integrity: sha512-y8LEk4+p/Y1qoB2bxG7FqmmSOlnG7gZ9KR0K9CcBc96Xfqu9vX/N9kc528PM9kHT5o373DEchPZ+FFFkWjNfDg==, tarball: download/@vanyauhalin/eslint-config-base/0.3.0/f4aab2f0a1e0820266710152798f0856b05039dc295b1e1e8d487b333330b4b4}
-    engines: {node: '>=12', pnpm: '>=4'}
+  /@vanyauhalin/eslint-config-base/0.3.2_eslint@8.14.0:
+    resolution: {integrity: sha512-ikIiDoyw7bR+iOQguAF+03TOIBmaa2x1IHmTZW7V4eRqt8FFX4W7+ZszOWAllPQ+rwFVs5TcD5YiFzbn4NLE4A==, tarball: download/@vanyauhalin/eslint-config-base/0.3.2/97b529e7fd6648df5962d00c3bf5369b5e71f696fffd2e1ac9bd6ede22baff94}
     peerDependencies:
-      eslint: ^7.32.0
+      eslint: ^7.32.0 || ^8.0.0
     dependencies:
       eslint: 8.14.0
       eslint-config-airbnb-base: 15.0.0_662e1b2e8ef3f6aa5d22c3f7cd670612
