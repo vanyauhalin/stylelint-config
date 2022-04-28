@@ -16,19 +16,21 @@ function read() {
   });
 }
 
-read().forEach((pack) => {
-  build({
-    allowOverwrite: true,
-    bundle: true,
-    entryPoints: fs.readdirSync(pack.src)
-      .filter((file) => file.endsWith('.cjs'))
-      .map((file) => `${pack.src}/${file}`),
-    outfile: pack.main,
-    platform: 'node',
-  }).catch((error) => {
-    throw new Error(error.stderr);
+if (process.env.npm_lifecycle_event === 'build') {
+  read().forEach((pack) => {
+    build({
+      allowOverwrite: true,
+      bundle: true,
+      entryPoints: fs.readdirSync(pack.src)
+        .filter((file) => file.endsWith('.cjs'))
+        .map((file) => `${pack.src}/${file}`),
+      outfile: pack.main,
+      platform: 'node',
+    }).catch((error) => {
+      throw new Error(error.stderr);
+    });
   });
-});
+}
 
 export {
   read,
