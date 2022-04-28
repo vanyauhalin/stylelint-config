@@ -1,4 +1,4 @@
-# ESLint config
+# Stylelint config
 
 [![Build status](https://github.com/vanyauhalin/stylelint-config/workflows/build/badge.svg)](https://github.com/vanyauhalin/stylelint-config/actions)
 
