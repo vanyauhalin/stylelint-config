@@ -1,8 +1,6 @@
 /**
- * This package is written in commonjs,
- * because in the process of building
- * the package on modules it gives an error:
- * `TypeError: Cannot set property plugins
+ * This package is written in commonjs, because stylelint throws an error
+ * when building from modules: `TypeError: Cannot set property plugins
  * of #<Object> which has only a getter`.
  * @see https://github.com/evanw/esbuild/issues/587
  */
@@ -21,10 +19,9 @@ const config = {
   plugins: 'stylelint-order',
   overrides: [],
   /**
-   * The `rules` property must be in the config,
-   * otherwise stylelint will throw an error:
-   * `Error: No rules found within configuration.
-   * Have you provided a 'rules' property?`
+   * The `rules` property must be in the config, otherwise stylelint will throw
+   * an error: `Error: No rules found within configuration. Have you provided
+   * a 'rules' property?`.
    */
   rules: {},
 };
