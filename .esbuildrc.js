@@ -16,18 +16,14 @@ function read() {
   });
 }
 
-const packages = read();
-packages.forEach((pack) => {
-  const { main, src } = pack;
-  const entries = fs.readdirSync(src)
-    .filter((file) => file.endsWith('.cjs'))
-    .map((file) => `${src}/${file}`);
-
+read().forEach((pack) => {
   build({
     allowOverwrite: true,
     bundle: true,
-    entryPoints: entries,
-    outfile: main,
+    entryPoints: fs.readdirSync(pack.src)
+      .filter((file) => file.endsWith('.cjs'))
+      .map((file) => `${pack.src}/${file}`),
+    outfile: pack.main,
     platform: 'node',
   }).catch((error) => {
     throw new Error(error.stderr);
