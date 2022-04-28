@@ -24,7 +24,7 @@ importers:
 
   packages/stylelint-config-base:
     specifiers:
-      stylelint: 14.8.0
+      stylelint: ^14.8.0
       stylelint-order: ^5.0.0
     dependencies:
       stylelint-order: 5.0.0_stylelint@14.8.0
