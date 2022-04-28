@@ -3,14 +3,11 @@ import { test } from 'uvu';
 import { is } from 'uvu/assert';
 import { read } from '../.esbuildrc';
 
-const packages = read();
-
 test('stylelint should throw an configs error', async () => {
-  await Promise.all(packages.map(async (pack) => {
-    const { main } = pack;
+  await Promise.all(read().map(async (pack) => {
     const { results } = await stylelint.lint({
       config: {
-        extends: main,
+        extends: pack.main,
       },
       files: './test/*.css',
     });
