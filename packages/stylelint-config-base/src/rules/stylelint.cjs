@@ -309,7 +309,10 @@ const rules = {
    * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/rule-empty-line-before
    */
   'rule-empty-line-before': ['always', {
-    except: ['first-nested'],
+    except: [
+      'after-single-line-comment',
+      'first-nested',
+    ],
   }],
   /**
    * Require or disallow an empty line before at-rules.
