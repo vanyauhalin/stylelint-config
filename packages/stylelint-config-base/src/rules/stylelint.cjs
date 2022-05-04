@@ -326,7 +326,10 @@ const rules = {
    * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/comment-empty-line-before
    */
   'comment-empty-line-before': ['always', {
-    except: ['first-nested'],
+    except: [
+      'first-nested',
+      'stylelint-commands',
+    ],
   }],
   /**
    * Require or disallow whitespace on the inside of comment markers.
