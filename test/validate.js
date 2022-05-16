@@ -1,34 +1,23 @@
-import { readdirSync } from 'fs';
 import { resolve } from 'path';
 import stylelint from 'stylelint';
 import { test } from 'uvu';
 import { is } from 'uvu/assert';
 
-function read() {
-  const PACKAGES_DIRECTORY = 'packages';
-  const packages = readdirSync(PACKAGES_DIRECTORY);
-  return packages.map((pack) => {
-    const root = `${PACKAGES_DIRECTORY}/${pack}`;
-    const main = resolve(`${root}/lib/index.cjs`);
-    const src = resolve(`${root}/src`);
-    return {
-      main,
-      src,
-    };
-  });
-}
+const PACKAGES = resolve('packages');
+const REFERENCE = resolve('test/reference');
 
-test('stylelint should throw an configs error', async () => {
-  await Promise.all(read().map(async (pack) => {
+['base'].forEach((name) => {
+  const fullName = `stylelint-config-${name}`;
+  test(`${fullName} should throw an configs error`, async () => {
     const { results } = await stylelint.lint({
       config: {
-        extends: pack.main,
+        extends: `${PACKAGES}/${fullName}/lib/index.cjs`,
       },
-      files: './test/*.css',
+      files: `${REFERENCE}/${name}.css`,
     });
     const hasError = !!results.find((el) => el.errored);
     is(hasError, true);
-  }));
+  });
 });
 
 test.run();
