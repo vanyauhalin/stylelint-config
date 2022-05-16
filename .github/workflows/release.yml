@@ -19,7 +19,6 @@ jobs:
           >> .npmrc
       - run: npm i -g pnpm
       - run: pnpm i --frozen-lockfile
-      - run: pnpm build
       - run: pnpm publish packages/stylelint-config-base --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
