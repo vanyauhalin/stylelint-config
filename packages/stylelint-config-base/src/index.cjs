@@ -9,7 +9,8 @@
  * @typedef {import('stylelint').Config} Config
  */
 
-const { rules } = require('./rules/index.cjs');
+const stylelintOrder = require('./stylelint-order.cjs');
+const stylelint = require('./stylelint.cjs');
 
 /**
  * Main Stylelint configuration whose properties will be exported.
@@ -27,8 +28,11 @@ const config = {
 };
 
 config.overrides.push({
-  rules,
   files: '**/*.css',
+  rules: {
+    ...stylelint,
+    ...stylelintOrder,
+  },
 });
 
 module.exports = config;

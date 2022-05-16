@@ -1,4 +1,4 @@
-const rules = {
+module.exports = {
   /**
    * Specify the order of content within declaration blocks.
    * @see https://github.com/hudochenkov/stylelint-order/tree/master/rules/order
@@ -12,5 +12,3 @@ const rules = {
    */
   'order/properties-alphabetical-order': true,
 };
-
-exports.rules = rules;

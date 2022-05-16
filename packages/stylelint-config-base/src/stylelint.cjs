@@ -1,4 +1,4 @@
-const rules = {
+module.exports = {
   /**
    * Disallow invalid hex colors.
    * @see https://github.com/stylelint/stylelint/blob/main/lib/rules/color-no-invalid-hex
@@ -750,5 +750,3 @@ const rules = {
    */
   'no-extra-semicolons': true,
 };
-
-exports.rules = rules;
