@@ -11,7 +11,7 @@ const REFERENCE = resolve('test/reference');
   test(`${fullName} should throw an configs error`, async () => {
     const { results } = await stylelint.lint({
       config: {
-        extends: `${PACKAGES}/${fullName}/lib/index.cjs`,
+        extends: `${PACKAGES}/${fullName}/lib/index.js`,
       },
       files: `${REFERENCE}/${name}.css`,
     });
