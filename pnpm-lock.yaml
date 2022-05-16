@@ -7,7 +7,7 @@ importers:
       '@arkweid/lefthook': ^0.7.7
       '@commitlint/cli': ^16.2.3
       '@commitlint/config-conventional': ^16.2.1
-      '@vanyauhalin/eslint-config-base': ^0.3.2
+      '@vanyauhalin/eslint-config-base': ^0.12.0
       eslint: ^8.14.0
       stylelint: ^14.8.0
       uvu: ^0.5.3
@@ -15,7 +15,7 @@ importers:
       '@arkweid/lefthook': 0.7.7
       '@commitlint/cli': 16.2.3
       '@commitlint/config-conventional': 16.2.1
-      '@vanyauhalin/eslint-config-base': 0.3.2_eslint@8.14.0
+      '@vanyauhalin/eslint-config-base': 0.12.0_eslint@8.14.0
       eslint: 8.14.0
       stylelint: 14.8.0
       uvu: 0.5.3
@@ -292,7 +292,7 @@ packages:
     dev: true
 
   /@types/json5/0.0.29:
-    resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
   /@types/minimist/1.2.2:
@@ -311,9 +311,8 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
-  /@vanyauhalin/eslint-config-base/0.3.2_eslint@8.14.0:
-    resolution: {integrity: sha512-ikIiDoyw7bR+iOQguAF+03TOIBmaa2x1IHmTZW7V4eRqt8FFX4W7+ZszOWAllPQ+rwFVs5TcD5YiFzbn4NLE4A==, tarball: download/@vanyauhalin/eslint-config-base/0.3.2/97b529e7fd6648df5962d00c3bf5369b5e71f696fffd2e1ac9bd6ede22baff94}
-    engines: {node: '>=12', pnpm: '>=4'}
+  /@vanyauhalin/eslint-config-base/0.12.0_eslint@8.14.0:
+    resolution: {integrity: sha512-fUjgTlSZyqA/7ufO7Ks65gZh9uu/xhbM6HAWnxVgeIWnt3ckJC0rwbXCvwRBYEY61jkqsEPJzXM0xDlKBWs2vg==, tarball: download/@vanyauhalin/eslint-config-base/0.12.0/b5a49027531bca23dc62e55bc05d6949fdd26201295986bb6200cdbe68369415}
     peerDependencies:
       eslint: ^7.32.0 || ^8.0.0
     dependencies:
